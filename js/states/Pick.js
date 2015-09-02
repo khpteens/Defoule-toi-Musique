@@ -11,25 +11,20 @@ Vent.Pick.prototype = {
 	create: function() {
 
 		createBG(0x938884);
-		createCopyright();
-
-		// // "How stressed are you?"
-		// var text = "How stressed are you?";		
-		// var t = this.game.add.text(this.game.width / 2, this.game.height / 2 - 125, text, h3_style);
-		// t.anchor.set(0.5);	
+		createCopyright();			
 
 		// "How many baseballs do you need to hit?"
-		text = "Which instrument\ndo you want to play?";
+		text = "Quel instrument\nveux-tu jouer ?";
 		var t2 = this.game.add.text(this.game.width / 2, this.game.height / 2 - 70, text, h2_style);
 		t2.anchor.set(0.5);
 
 		// bt "Just a few"
-		text = "Shred on guitar";
+		text = "Gratter une guitare";
 		var aFewBt = this.game.add.sprite(this.game.width / 2, this.game.height / 2 + 50, "square");
 		createBt(aFewBt, text, "Guitar", false, "emoji1");				
 
 		// bt "A lot"
-		text = "Bang the drums";
+		text = "Jouer une batterie";
 		var aLotBt = this.game.add.sprite(this.game.width / 2, this.game.height / 2 + 110, "square");
 		createBt(aLotBt, text, "Drum", false, "emoji2");		
 

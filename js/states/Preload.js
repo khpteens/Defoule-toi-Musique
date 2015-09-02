@@ -141,7 +141,7 @@ function createStyles() {
 		align: "center"
 	};
 	h3_style_bold = {
-		font: "300 35px Lobster",
+		font: "300 30px Lobster",
 		fill: white,
 		align: "center"
 	};

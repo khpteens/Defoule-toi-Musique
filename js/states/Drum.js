@@ -110,15 +110,15 @@ function create_drum_prompt() {
 	drumPrompt.add(overlay);
 
 	// Instruction prompt   
-	text = "Click the drums";
-	if (hasTouch) text = "Tap the drums";
+	text = "Cliquez sur les caisses de la batterie";
+	if (hasTouch) text = "Appuie sur les caisses de la batterie";
 	winText = Vent.game.add.text(settings.WIDTH / 2, settings.HEIGHT / 2 - 40, text, h3_style_bold);
 	winText.anchor.set(0.5);
 	drumPrompt.add(winText);
 
 	// Continue button
 	ContinueBt = Vent.game.add.sprite(settings.WIDTH / 2, settings.HEIGHT / 2 + 30, 'square');
-	createBt(ContinueBt, "Continue", false);
+	createBt(ContinueBt, "Continuer", false);
 	ContinueBt.events.onInputUp.add(function() {
 		drumPrompt.visible = false;
 	}, this);

@@ -108,15 +108,15 @@ function create_guitar_prompt() {
 	guitarPrompt.add(overlay);
 
 	// Instruction prompt   
-	text = "Click the guitar to shred";
-	if (hasTouch) text = "Tap the guitar to shred";
+	text = "Cliquez sur la guitare pour jouer";
+	if (hasTouch) text = "Appuie sur la guitare pour jouer";
 	winText = Vent.game.add.text(settings.WIDTH / 2, settings.HEIGHT / 2 - 40, text, h3_style_bold);
 	winText.anchor.set(0.5);
 	guitarPrompt.add(winText);
 
 	// Continue button
 	ContinueBt = Vent.game.add.sprite(settings.WIDTH / 2, settings.HEIGHT / 2 + 30, 'square');
-	createBt(ContinueBt, "Continue", false);
+	createBt(ContinueBt, "Continuer", false);
 	ContinueBt.events.onInputUp.add(function() {
 		guitarPrompt.visible = false;
 	}, this);
