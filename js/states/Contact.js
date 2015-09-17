@@ -20,7 +20,7 @@ Vent.Contact.prototype = {
 			phoneButtonH = this.game.height / 2 + 10;
 
 		// Live Chat
-		if (chatOpen) {
+		if (chatOpenFr) {
 			text = chatOpen_txt[1];			
 		} else {
 			text = chatClosed_txt[1];
